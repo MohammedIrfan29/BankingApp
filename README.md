@@ -1,4 +1,4 @@
-BankingApp
+Banking Application
 
 BankingApp is used to register customer with bank and open bank accounts and perform transactions. 
 
