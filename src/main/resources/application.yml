@@ -1,0 +1,28 @@
+# Datasource Settings
+spring:
+  application:
+    name: Banking Application
+    
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+
+# H2 Settings        
+  h2:
+    console:
+      enabled: true
+      
+# Server Settings     
+server:
+  port: 8080
+  servlet:
+    context-path: /bankApp
