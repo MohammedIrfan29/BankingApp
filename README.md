@@ -49,6 +49,7 @@ b)	Query all BankAccounts of a Customer with a particular openingDate
 http://localhost:8080/bankApp/account?cif=C100001&openingDate=2020-06-19
 
 Output:
+
 [
     {
         "accountNumber": "A200002",
