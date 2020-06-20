@@ -1,6 +1,6 @@
 BankingApp
 
-BankingApp is used to register customer with bank and open bank accounts and perform daily transaction. 
+BankingApp is used to register customer with bank and open bank accounts and perform transactions. 
 
 Installation
 
@@ -81,13 +81,13 @@ Output:
         "bankAccounts": [
             {
                 "accountNumber": "A200001",
-                "openingDate": "2020-06-19",
+                "openingDate": "2020-06-20",
                 "balance": 1000.00,
                 "status": 1
             },
             {
                 "accountNumber": "A200002",
-                "openingDate": "2020-06-19",
+                "openingDate": "2020-06-20",
                 "balance": 5000.00,
                 "status": 1
             }
@@ -128,7 +128,7 @@ Output Json:
         "currency": "MYR",
         "bankAccount": {
             "accountNumber": "A200001",
-            "openingDate": "2020-06-19",
+            "openingDate": "2020-06-20",
             "balance": 1000.00,
             "status": 1
         }
