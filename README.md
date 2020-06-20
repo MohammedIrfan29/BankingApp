@@ -1,6 +1,6 @@
 BankingApp
 
-BankingApp is used to register customer accounts and perform transaction. 
+BankingApp is used to register customer with bank and open bank accounts and perform daily transaction. 
 
 Installation
 
@@ -101,6 +101,7 @@ Method: POST
 http://localhost:8080/bankApp/transaction
 
 Input Json:
+
 {
    "amount":5000,
    "time":"2020-06-20T12:25:43.511Z",
@@ -112,9 +113,11 @@ Input Json:
 }
 
 e)	Query all Transactions of a particular Customer
+
 http://localhost:8080/bankApp/transaction?cif=C100001
 
 Output Json:
+
 [
     {
         "tranId": 1,
