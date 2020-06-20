@@ -46,20 +46,22 @@ Input Json:
 
 b)	Query all BankAccounts of a Customer with a particular openingDate
 
-http://localhost:8080/bankApp/account?cif=C100001&openingDate=2020-06-19
+http://localhost:8080/bankApp/account?cif=C100001&openingDate=2020-06-20
+
+Method: GET
 
 Output:
 
 [
     {
         "accountNumber": "A200002",
-        "openingDate": "2020-06-19",
+        "openingDate": "2020-06-20",
         "balance": 5000.00,
         "status": 1
     },
     {
         "accountNumber": "A200001",
-        "openingDate": "2020-06-19",
+        "openingDate": "2020-06-20",
         "balance": 1000.00,
         "status": 1
     }
@@ -68,6 +70,8 @@ Output:
 c)	Query all Customers opening a BankAccount on a particular openingDate
 
 http://localhost:8080/bankApp/customer/?openingDate=2020-06-20
+
+Method: GET
 
 Output:
 
@@ -97,9 +101,9 @@ Output:
 
 d)	Create a Transaction
 
-Method: POST
-
 http://localhost:8080/bankApp/transaction
+
+Method: POST
 
 Input Json:
 
@@ -116,6 +120,8 @@ Input Json:
 e)	Query all Transactions of a particular Customer
 
 http://localhost:8080/bankApp/transaction?cif=C100001
+
+Method: GET
 
 Output Json:
 
