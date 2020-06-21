@@ -1,16 +1,23 @@
-Banking Application
+**BankingApp**
 
 BankingApp is used to register customer with bank and open bank accounts and perform transactions. 
 
-Installation
+**Installation**
 
 Use Maven to build the application
 
-mvn clean install
+`mvn clean install`
 
 Upon successfully packaging the app, Use the command to start the application
 
-mvn spring-boot:run
+`mvn spring-boot:run`
+
+**Swagger:** 
+
+Endpoint used to determine the API endpoint and the response and error models You can execute the application 
+from within the swagger endpoint by clicking on "Try It Out".
+
+`http://localhost:8080/bankApp/swagger-ui.html`
 
 Endpint used to determine whether the service is Up or Not
 
