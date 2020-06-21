@@ -1,20 +1,27 @@
-BankingApp
+**BankingApp**
 
 BankingApp is used to register customer with bank and open bank accounts and perform transactions. 
 
-Installation
+**Installation**
 
 Use Maven to build the application
 
-mvn clean install
+`mvn clean install`
 
 Upon successfully packaging the app, Use the command to start the application
 
-mvn spring-boot:run
+`mvn spring-boot:run`
+
+**Swagger:** 
+
+Endpoint used to determine the API endpoint and the response and error models You can execute the application 
+from within the swagger endpoint by clicking on "Try It Out".
+
+http://localhost:8080/bankApp/swagger-ui.html
 
 Endpint used to determine whether the service is Up or Not
 
-a)	Register a Customer with a BankAccount
+**a)	Register a Customer with a BankAccount**
 
 Method: POST
 
@@ -44,7 +51,7 @@ Input Json:
    ]
 }
 
-b)	Query all BankAccounts of a Customer with a particular openingDate
+**b)	Query all BankAccounts of a Customer with a particular openingDate**
 
 http://localhost:8080/bankApp/account?cif=C100001&openingDate=2020-06-20
 
@@ -67,7 +74,7 @@ Output:
     }
 ]
 
-c)	Query all Customers opening a BankAccount on a particular openingDate
+**c)	Query all Customers opening a BankAccount on a particular openingDate**
 
 http://localhost:8080/bankApp/customer/?openingDate=2020-06-20
 
@@ -99,7 +106,7 @@ Output:
     }
 ]
 
-d)	Create a Transaction
+**d)	Create a Transaction**
 
 http://localhost:8080/bankApp/transaction
 
@@ -117,7 +124,7 @@ Input Json:
    }
 }
 
-e)	Query all Transactions of a particular Customer
+**e)	Query all Transactions of a particular Customer**
 
 http://localhost:8080/bankApp/transaction?cif=C100001
 
@@ -140,7 +147,3 @@ Output Json:
         }
     }
 ]
-
-
-
-
