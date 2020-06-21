@@ -1,6 +1,6 @@
 **BankingApp**
 
-BankingApp is used to register customer with bank and open bank accounts and perform transactions. 
+BankingApp is used to register customer with bank, fetch customer bank account details and perform transactions. 
 
 **Installation**
 
@@ -14,7 +14,7 @@ Upon successfully packaging the app, Use the command to start the application
 
 **Swagger:** 
 
-Endpoint used to determine the API endpoint and the response and error models You can execute the application 
+Endpoint used to determine the API endpoint and the response and error models. You can execute the application 
 from within the swagger endpoint by clicking on "Try It Out".
 
 http://localhost:8080/bankApp/swagger-ui.html
