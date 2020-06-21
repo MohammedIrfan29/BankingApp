@@ -29,7 +29,7 @@ http://localhost:8080/bankApp/customer/
 
 Input Json:
 
-{
+{`
    "cif":"C100001",
    "name":"Irfan",
    "dateOfBirth":"1990-01-20",
@@ -49,7 +49,7 @@ Input Json:
          "status":1
       }
    ]
-}
+}`
 
 **b)	Query all BankAccounts of a Customer with a particular openingDate**
 
@@ -59,7 +59,7 @@ Method: GET
 
 Output:
 
-[
+`[
     {
         "accountNumber": "A200002",
         "openingDate": "2020-06-20",
@@ -72,7 +72,7 @@ Output:
         "balance": 1000.00,
         "status": 1
     }
-]
+]`
 
 **c)	Query all Customers opening a BankAccount on a particular openingDate**
 
@@ -82,7 +82,7 @@ Method: GET
 
 Output:
 
-[
+`[
     {
         "cif": "C100001",
         "name": "Irfan",
@@ -104,7 +104,7 @@ Output:
             }
         ]
     }
-]
+]`
 
 **d)	Create a Transaction**
 
@@ -114,7 +114,7 @@ Method: POST
 
 Input Json:
 
-{
+`{
    "amount":5000,
    "time":"2020-06-20T12:25:43.511Z",
    "status":1,
@@ -122,7 +122,7 @@ Input Json:
    "bankAccount":{
       "accountNumber":"A200001"
    }
-}
+}`
 
 **e)	Query all Transactions of a particular Customer**
 
@@ -132,7 +132,7 @@ Method: GET
 
 Output Json:
 
-[
+`[
     {
         "tranId": 1,
         "amount": 5000.00,
@@ -146,4 +146,4 @@ Output Json:
             "status": 1
         }
     }
-]
+]`
